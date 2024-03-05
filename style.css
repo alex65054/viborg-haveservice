@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    color: #292929;
+}
+
+
+
+/* Some presets */
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+hr {
+    border: 2px solid #c0dda0;
+    width: 100px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+
+/* Header shit */
+
+header {
+    opacity: .9;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+    color: rgb(250, 250, 250);
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer garbage */
+
+footer {
+    padding: 20px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer a {
+    height: 50px;
+    display: block;
+}
+
+footer a img {
+    height: 100%;
+}
+
+
+
+/* Everything else */
+
+
+/* First heading w/ image */
+
+main {
+    flex-grow: 1;
+}
+
+.first-heading {
+    height: 120vh;
+    width: 100%;
+    background-image: url('./assets/banner-bg-1920-HD.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.first-heading>div {
+    text-align: center;
+    color: white;
+    width: 60%;
+}
+
+.first-heading h2 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.first-heading p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.first-heading a {
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #6aaf09;
+    width: max-content;
+    padding: 20px 30px;
+    border-radius: 5px;
+    transition-property: background-color;
+    transition-duration: 100ms;
+}
+
+.first-heading a:hover {
+    background-color: #78b62c;
+}
+
+
+/* Velkommen */
+
+.velkommen-container {
+    display: flex;
+    padding: 160px 0;
+}
+
+.velkommen-container>* {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.velkommen-info-container {
+    padding: 80px;
+    padding-top: 0;
+}
+
+.velkommen-info-container h3 {
+    margin: 25px 0;
+    margin-top: 0;
+}
+
+.velkommen-info-container hr {
+    margin-left: 0;
+    margin-bottom: 75px;
+    border-color: #6aaf09;
+}
+
+.velkommen-info-container h3 span {
+    color: #6eab45;
+    font-weight: 700;
+}
+
+.velkommen-info-container p,.velkommen-info-container ul {
+    display: block;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+
+.velkommen-info-container ul {
+    list-style: circle outside;
+}
+
+.velkommen-info-container a {
+    background-color: #6aaf09;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-top: 75px;
+    display: block;
+    width: max-content;
+    transition-property: background-color;
+    transition-duration: 100ms;
+}
+
+.velkommen-info-container a:hover {
+    background-color: #78b62c;
+}
+
+.ydelser-cards {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ydelser-cards>* {
+    padding: 20px;
+    width: 400px;
+}
+
+.ydelser-cards>article img {
+    width: 100%;
+}
+
+.ydelser-cards h4 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* Vores ydelser */
+
+.ydelser-container {
+    background-color: #6aaf09;
+    padding: 80px;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.ydelser-container h3 {
+    margin: 0;
+}
+
+.ydelser-card-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+    margin-top: 75px;
+}
+
+.ydelser-card-holder>article {
+    width: 300px;
+}
+
+.ydelser-card-holder img {
+    border-radius: 50%;
+    border: 15px solid #78b62c;
+}
+
+.ydelser-card-holder h4 {
+    font-size: 1.5rem;
+}
+
+.ydelser-card-holder p {
+    font-size: 1.25rem;
+}
+
+
+/* Gallery */
+
+.gallery-container {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.gallery-container h3 {
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.gallery-container hr {
+    border-color: #6aaf09;
+}
+
+.gallery-container p {
+    margin-bottom: 100px;
+}
+
+/* Buttons */
+
+/* while checked debug */
+/* input display none */
+/* style labels */
+
+.gallery-images input {
+    display: none;
+}
+
+.gallery-images label {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(100, 100, 100);
+    margin: 10px;
+    transition-duration: 100ms;
+    transition-property: background-color color;
+}
+
+.gallery-images label:hover {
+    cursor: pointer;
+    background-color: #c0dda0;
+}
+
+.gallery-images input:checked + label {
+    background-color: #6aaf09;
+    color: white;
+}
+
+.filtered-images-box {
+    margin-top: 50px;
+}
+
+/* Image filtering logic */
+
+.filtered-images-box a {
+    display: none;
+}
+
+#gallery-all:checked ~ .filtered-images-box a {
+    display: inline;
+}
+
+#gallery-lawn:checked ~ .filtered-images-box .gallery-lawn {
+    display: inline;
+}
+
+#gallery-facility:checked ~ .filtered-images-box .gallery-facility {
+    display: inline;
+}
+
+#gallery-planting:checked ~ .filtered-images-box .gallery-planting {
+    display: inline;
+}
+
+
+/* Kundeudtalelser */
+
+.customer-quote-container {
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(106, 175, 9, .5), rgba(106, 175, 9, .5)), url('./assets/udtalelser-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    text-align: center;
+}
+
+.customer-quote-container h3 {
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+.quote-box {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.quote-selector {
+    order: 2;
+}
+
+.quote-selector input {
+    width: 25px;
+    height: 25px;
+    accent-color: white;
+    opacity: .5;
+    transition-duration: 100ms;
+    transition-property: opacity;
+}
+
+/* Selector logic */
+
+.quote-selector input:checked {
+    opacity: .9;
+}
+
+.quote-selector input:hover {
+    opacity: .75;
+}
+
+.quote-selector input:checked:hover {
+    opacity: 1;
+}
+
+.cquote {
+    display: none;
+}
+
+.quote-selector:has(#customer-quote-toggle1:checked) ~ #customer-quote-text1 {
+    display: block;
+}
+
+.quote-selector:has(#customer-quote-toggle2:checked) ~ #customer-quote-text2 {
+    display: block;
+}
+
+.quote-selector:has(#customer-quote-toggle3:checked) ~ #customer-quote-text3 {
+    display: block;
+}
+
+
+
+/* Kontakt os */
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-container h3 {
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+.contact-container>hr {
+    border-color: #6aaf09;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.contact-container h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact-info>article {
+    width: 33%;
+}
+
+.contact-info>article hr {
+    border-color: #dddddd;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.contact-info>article h4 {
+    margin-bottom: 10px;
+}
+
+.contact-info>article p {
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contact-form>div {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form div input {
+    width: 100%;
+}
+
+.contact-form textarea {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.contact-form input,.contact-form textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.contact-form button {
+    padding: 20px 30px;
+    background-color: #6aaf09;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border: 0;
+}
+
+.contact-form button:hover {
+    cursor: pointer;
+}
