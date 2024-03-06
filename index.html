@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Viborg Haveservice</title>
+    <script>
+        document.documentElement.dataset.scroll = 0;
+
+        document.addEventListener('scroll', function() {
+            if (window.scrollY < 400) document.documentElement.dataset.scroll = 0;
+            else document.documentElement.dataset.scroll = window.scrollY;
+        })
+    </script>
 </head>
 <body>
     <header>
         <h1>Viborg Haveservice</h1>
         <nav>
-            <a href="#velkommen">OM OS</a>
-            <a href="#ydelser">YDELSER</a>
-            <a href="#galleri">GALLERI</a>
-            <a href="#kundeudtalelser">DET SIGER KUNDERNE</a>
-            <a href="#kontakt">KONTAKT</a>
+            <div class="full-nav">
+                <a href="#velkommen">OM OS</a>
+                <a href="#ydelser">YDELSER</a>
+                <a href="#galleri">GALLERI</a>
+                <a href="#kundeudtalelser">DET SIGER KUNDERNE</a>
+                <a href="#kontakt">KONTAKT</a>
+            </div>
             <div class="alt-menu">
                 <input type="checkbox" name="menu-toggle">
                 <span class="material-symbols-rounded menu-open">menu</span>
@@ -27,6 +37,9 @@
                     <a href="#kontakt">KONTAKT</a>
                 </div>
             </div>
+            <a id="back-to-top" href="#">
+                <span class="material-symbols-rounded">keyboard_arrow_up</span>
+            </a>
         </nav>
     </header>
     <main>
