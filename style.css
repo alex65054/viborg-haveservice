@@ -373,6 +373,10 @@ main {
     order: 2;
 }
 
+.quote-selector:hover {
+    cursor: default;
+}
+
 .quote-selector input {
     width: 25px;
     height: 25px;
