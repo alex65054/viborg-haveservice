@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
@@ -61,6 +62,10 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+}
+
+.alt-menu {
+    display: none;
 }
 
 /* Footer garbage */
@@ -503,7 +508,77 @@ main {
 
 @media only screen and (max-width: 1200px) {
 
-    /* TODO: Add alt menu */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav>a {
+        display: none;
+    }
+
+    .alt-menu {
+        display: block;
+    }
+
+    .alt-menu input:hover {
+        cursor: pointer;
+    }
+
+    .alt-dropdown {
+        display: none;
+    }
+
+    .menu-close {
+        opacity: 0;
+    }
+
+    .alt-menu span {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 3rem;
+        transition-property: opacity;
+        transition-duration: 100ms;
+    }
+
+    .alt-menu input {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        opacity: 0;
+        z-index: 3;
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .alt-menu input:checked ~ .menu-close {
+        opacity: 1;
+    }
+
+    .alt-menu input:checked ~ .menu-open {
+        opacity: 0;
+    }
+
+    .alt-menu input:checked ~ .alt-dropdown {
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: rgba(0,0,0,.5);
+        top: 6rem;
+        width: 100%;
+    }
+
+    .alt-dropdown a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        transition-property: background-color;
+        transition-duration: 100ms;
+    }
+
+    .alt-dropdown a:hover {
+        background-color: rgba(0,0,0,.1);
+    }
 
     .velkommen-container {
         flex-direction: column;
